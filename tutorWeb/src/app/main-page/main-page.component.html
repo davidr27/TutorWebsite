@@ -1,1 +1,13 @@
-<p>main-page works!</p>
+<p class="center title-align">Welcome On Board</p>
+
+<p class="center title-align"> &copy; TutorWeb by Latino Youth Leadership Academy in Orange Country</p>
+
+<p class="center center-align"> The purpose of this website is to provide helpful YouTube Channels for students
+struggling with their courses. The links provided in this website have been verified by the organization.</p>
+
+
+<nav mat-tab-nav-bar >
+  <a mat-tab-link *ngFor="let option of options" >
+    {{option}}
+  </a>
+</nav>
