@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  options = ['Math', 'English', 'Business', 'Computer Science']
+  options = ['YouTube', 'Websites', 'Scholarships', 'Apps']
 
   constructor() { }
 
