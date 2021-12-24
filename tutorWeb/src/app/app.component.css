@@ -1,0 +1,14 @@
+.mat-icon-button{
+  margin: auto;
+  display: contents;
+}
+
+.example-spacer{
+  flex: 1 1 auto;
+}
+
+.mat-toolbar{
+  background: #b30404;
+}
+
+
