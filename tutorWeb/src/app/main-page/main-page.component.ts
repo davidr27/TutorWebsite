@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
+  //need to be pulled from the database
   options = ['YouTube', 'Websites', 'Scholarships', 'Apps']
 
   constructor() { }

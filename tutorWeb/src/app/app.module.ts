@@ -13,12 +13,14 @@ import { MatIconModule} from "@angular/material/icon";
 import { MatDividerModule} from "@angular/material/divider";
 import { MatListModule} from "@angular/material/list";
 import { MainPageComponent } from './main-page/main-page.component';
+import { YoutubePageComponent } from './main-page/youtube-page/youtube-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
-    MainPageComponent
+    MainPageComponent,
+    YoutubePageComponent
   ],
   imports: [
     BrowserModule,
