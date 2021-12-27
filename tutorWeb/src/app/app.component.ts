@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-//importing api-object interface menu images
-import { ImagesMenu} from "./api-objects/imagesMenu";
+
 
 @Component({
   selector: 'app-root',
@@ -11,7 +10,6 @@ import { ImagesMenu} from "./api-objects/imagesMenu";
 export class AppComponent implements OnInit{
   title = 'tutorWeb';
 
-  images: ImagesMenu = {images: ['assets/images/latinoYouth.png', 'assets/images/newyork.png']};
   constructor() {
 
   }
@@ -19,5 +17,6 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     console.log('OnInit was called');
   }
+
 
 }

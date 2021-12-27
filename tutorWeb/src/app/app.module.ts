@@ -6,14 +6,19 @@ import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule} from "@angular/material/toolbar";
-import { MatTabsModule} from "@angular/material/tabs";
+
+
 import { MatButtonModule} from "@angular/material/button";
-import { MatIconModule} from "@angular/material/icon";
+import {MatCardModule} from "@angular/material/card";
 import { MatDividerModule} from "@angular/material/divider";
+import { MatIconModule} from "@angular/material/icon";
 import { MatListModule} from "@angular/material/list";
+import { MatTabsModule} from "@angular/material/tabs";
+import { MatToolbarModule} from "@angular/material/toolbar";
+
 import { MainPageComponent } from './main-page/main-page.component';
 import { YoutubePageComponent } from './main-page/youtube-page/youtube-page.component';
+
 
 @NgModule({
   declarations: [
@@ -23,15 +28,16 @@ import { YoutubePageComponent } from './main-page/youtube-page/youtube-page.comp
     YoutubePageComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    BrowserModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule,
     MatDividerModule,
+    MatIconModule,
     MatListModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

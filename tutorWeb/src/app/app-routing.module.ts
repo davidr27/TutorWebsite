@@ -3,11 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent} from "./about-us/about-us.component";
 import {AppComponent} from "./app.component";
 import {MainPageComponent} from "./main-page/main-page.component";
+import {YoutubePageComponent} from "./main-page/youtube-page/youtube-page.component";
 
 const routes: Routes = [
   {path: 'aboutUs', component: AboutUsComponent},
   {path: 'app', component: AppComponent},
-  {path: 'mainPage', component: MainPageComponent },
+  {path: 'mainPage', component: MainPageComponent, children: [
+      {path: 'YouTube', component: YoutubePageComponent}
+    ] },
   {path: '', redirectTo:'mainPage', pathMatch:"full"}
 ];
 
