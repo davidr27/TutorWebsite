@@ -1,0 +1,16 @@
+.container{
+  width:20%;
+}
+
+.design-mat{
+  position: relative;
+  border-radius: 0px;
+  height:50%;
+  border-style: solid;
+  border-color: #1c1a1a;
+  background-color: #bc444e;
+}
+
+.title-align{
+  text-align: center;
+}

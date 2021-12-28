@@ -7,7 +7,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
+import {FlexLayoutModule} from "@angular/flex-layout";
 import { MatButtonModule} from "@angular/material/button";
 import {MatCardModule} from "@angular/material/card";
 import { MatDividerModule} from "@angular/material/divider";
@@ -31,6 +31,7 @@ import { YoutubePageComponent } from './main-page/youtube-page/youtube-page.comp
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
+    FlexLayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatDividerModule,

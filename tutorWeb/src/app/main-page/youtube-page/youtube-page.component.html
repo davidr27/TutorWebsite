@@ -1,8 +1,8 @@
 
-<div class="container" *ngFor="let title of this.class.classes">
+<div class="container" fxFlex="row" *ngFor="let title of this.class.classes">
   <mat-card class="design-mat">
-      <mat-card-title>
-        {{title}} Ppiensalo
+      <mat-card-title class="title-align">
+        {{title}}
       </mat-card-title>
   </mat-card>
 </div>
