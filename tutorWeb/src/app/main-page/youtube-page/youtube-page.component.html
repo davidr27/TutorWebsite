@@ -2,7 +2,7 @@
 <div class="container" fxFlex="row" *ngFor="let title of this.class.classes">
   <mat-card class="design-mat">
       <mat-card-title class="title-align">
-        {{title}}
+        <button mat-raised-button (click)="openDialog(title)">{{title}}</button>
       </mat-card-title>
   </mat-card>
 </div>
