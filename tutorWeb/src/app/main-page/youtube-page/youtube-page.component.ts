@@ -22,8 +22,10 @@ export class YoutubePageComponent implements OnInit {
     console.log(title);
     if (title=='Math'){
       const dialogRed = this.dialog.open(MathComponent, {
-
+        width: '30%',
       });
     }
   }
+
+
 }
