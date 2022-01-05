@@ -8,12 +8,14 @@
 .footer{
   background: #1c77ac;
   height: 38%;
-  width: 60%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
+  padding: 5px;
   position: relative;
   display: table;
-  border-style: solid
+  border-style: solid;
+  margin-top: 4%;
 }
 
 .image-latino-logo{
@@ -29,7 +31,7 @@
 
 
 .title{
-  font-family: "monospace";
+  font-family: -webkit-pictograph;
   font-weight: bold;
   font-size: 26px;
   margin-top: 2%;

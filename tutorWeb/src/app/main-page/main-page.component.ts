@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ImagesMenu} from "../api-objects/imagesMenu";
 import {Router} from "@angular/router";
+import {EmailService} from "../email.service";
 
 @Component({
   selector: 'app-main-page',
@@ -16,7 +17,7 @@ export class MainPageComponent implements OnInit {
   // backgroundImage: string = this.images.images[1];
   backgroundImage: string | undefined;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private email: EmailService) { }
 
   ngOnInit(): void{
     console.log('OnInit was called');
