@@ -12,9 +12,10 @@ export class MainPageComponent implements OnInit {
   //need to be pulled from the database
   options = ['YouTube', 'Websites', 'Scholarships', 'Apps']
 
+  images: ImagesMenu = {images: ['/static/assets/images/latinoYouth.png', '/static/assets/images/newyork.jpg']};
+  // backgroundImage: string = this.images.images[1];
   backgroundImage: string | undefined;
 
-  images: ImagesMenu = {images: ['../../assets/images/latinoYouth.png', '../../assets/images/newyork.png']};
   constructor(private router: Router) { }
 
   ngOnInit(): void{
@@ -22,7 +23,11 @@ export class MainPageComponent implements OnInit {
   }
 
   onSelect(option:string){
-    this.router.navigate(['mainPage/YouTube']);
+    if(option=='YouTube')
+      this.router.navigate(['mainPage/YouTube']);
+    else
+      console.log("NOT AVAILABLE YET");
+      console.log("NOT AVAILABLE YET");
   }
 
 }

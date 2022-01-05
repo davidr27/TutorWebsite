@@ -1,16 +1,30 @@
 .center{
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+}
+
+.footer{
+  background: #1c77ac;
+  height: 38%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: table;
+  border-style: solid
 }
 
 .image-latino-logo{
   height: 30%;
   width: 20%;
+  border-radius: 30%;
 }
 
+
 .title{
-  font-family: "Times New Roman";
+  font-family: "monospace";
   font-weight: bold;
   font-size: 26px;
   margin-top: 2%;
