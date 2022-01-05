@@ -21,6 +21,8 @@ import { MatToolbarModule} from "@angular/material/toolbar";
 import { MainPageComponent } from './main-page/main-page.component';
 import { YoutubePageComponent } from './main-page/youtube-page/youtube-page.component';
 import { MathComponent } from './main-page/youtube-page/math/math.component';
+import {EmailService} from "./email.service";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -47,8 +49,9 @@ import { MathComponent } from './main-page/youtube-page/math/math.component';
     MatListModule,
     MatTabsModule,
     MatCardModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

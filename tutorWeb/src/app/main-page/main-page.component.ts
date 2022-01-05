@@ -17,17 +17,18 @@ export class MainPageComponent implements OnInit {
   // backgroundImage: string = this.images.images[1];
   backgroundImage: string | undefined;
 
-  constructor(private router: Router, private email: EmailService) { }
+  constructor(private router: Router, private email:EmailService) { }
 
   ngOnInit(): void{
     console.log('OnInit was called');
   }
 
   onSelect(option:string){
-    if(option=='YouTube')
+    if(option=='YouTube') {
+      this.email.sendEmail("david.9706@hotmail.com");
       this.router.navigate(['mainPage/YouTube']);
+    }
     else
-      console.log("NOT AVAILABLE YET");
       console.log("NOT AVAILABLE YET");
   }
 
