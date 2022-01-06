@@ -1,3 +1,4 @@
 #folders
 .idea
-
+#do not upload email_credentials
+email_credentials
