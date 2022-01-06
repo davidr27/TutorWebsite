@@ -8,8 +8,8 @@ def home(path):
 
 @app.route('/api/mainPage', methods=['POST'])
 def sendEmail():
-    data = request.get_json
-    print("esto"+format(data))
+    data = request.data
+    print("esto"+ format(data))
     return jsonify("Hello world")
 
 app.run()
