@@ -16,6 +16,7 @@ chrome-profiler-events*.json
 # test
 /src/app/about-us/about-us.component.spec.ts
 /src/app/app.component.spec.ts
+/src/app/main-page.component.spec.ts
 
 # IDEs and editors
 /.idea

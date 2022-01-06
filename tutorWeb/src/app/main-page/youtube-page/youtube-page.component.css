@@ -1,0 +1,54 @@
+/*.container{*/
+/*  width:20%;*/
+/*}*/
+
+.column {
+  float: left;
+  width: 45%;
+  border-style: solid;
+  height: 100px;
+  text-align: center;
+  background: #001f3f;
+}
+
+.center{
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center-button{
+  margin: 0 auto;
+  inline-size: -webkit-fill-available;
+}
+
+.center-emailbutton{
+  display: flex;
+  margin-left: 10%;
+  margin-top: 12%;
+  color: #efefef;
+}
+
+.mat-dialog-container{
+  background: #efefef;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  display: table;
+  clear: both;
+
+}
+
+/*.design-mat{*/
+/*  position: relative;*/
+/*  border-radius: 0px;*/
+/*  height:50%;*/
+/*  border-style: solid;*/
+/*  border-color: #1c1a1a;*/
+
+/*}*/
+
+/*.title-align{*/
+/*  text-align: center;*/
+/*}*/

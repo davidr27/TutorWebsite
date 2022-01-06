@@ -1,0 +1,14 @@
+
+
+<div class="center">
+  <div class="row">
+    <div class="column" *ngFor="let title of this.class.classes">
+      <button mat-raised-button (click)="openDialog(title)" class="center-button">{{title}}</button>
+      <div class="center-emailbutton">
+        <mat-icon >email</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+

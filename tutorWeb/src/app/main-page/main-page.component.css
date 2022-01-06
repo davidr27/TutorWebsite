@@ -1,0 +1,27 @@
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.title-align{
+  font-family: system-ui;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.center-align{
+  width: 40%;
+  text-align: center;
+  font-family: monospace;
+}
+
+.mat-tab-link{
+  background: black;
+  text-align : center;
+  font-family: cursive;
+}
+
+
