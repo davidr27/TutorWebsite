@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Classes} from "../../api-objects/classes";
 import {MathComponent} from "./math/math.component";
 import {MatDialog} from "@angular/material/dialog";
+import {EmailService} from "../../email.service";
 
 @Component({
   selector: 'app-youtube-page',
@@ -12,7 +13,7 @@ export class YoutubePageComponent implements OnInit {
 
   class: Classes = {classes: ['Math', 'English', 'Spanish', 'Biology', 'History', 'Computer Science']}
   title: string | undefined;
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private email: EmailService) { }
 
   ngOnInit(): void {
   }
@@ -27,6 +28,10 @@ export class YoutubePageComponent implements OnInit {
         panelClass: 'custom-background'
       });
     }
+  }
+
+  emailSender(emailUser:string){
+    this.email.sendEmail(emailUser);
   }
 
 

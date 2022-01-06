@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ImagesMenu} from "../api-objects/imagesMenu";
 import {Router} from "@angular/router";
-import {EmailService} from "../email.service";
+
 
 @Component({
   selector: 'app-main-page',
@@ -17,7 +17,7 @@ export class MainPageComponent implements OnInit {
   // backgroundImage: string = this.images.images[1];
   backgroundImage: string | undefined;
 
-  constructor(private router: Router, private email:EmailService) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void{
     console.log('OnInit was called');
@@ -25,8 +25,7 @@ export class MainPageComponent implements OnInit {
 
   onSelect(option:string){
     if(option=='YouTube') {
-      this.email.sendEmail("david.9706@hotmail.com");
-      // this.router.navigate(['mainPage/YouTube']);
+      this.router.navigate(['mainPage/YouTube']);
     }
     else
       console.log("NOT AVAILABLE YET");

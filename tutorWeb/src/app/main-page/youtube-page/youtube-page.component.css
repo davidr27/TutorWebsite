@@ -37,18 +37,4 @@
 .row:after {
   display: table;
   clear: both;
-
 }
-
-/*.design-mat{*/
-/*  position: relative;*/
-/*  border-radius: 0px;*/
-/*  height:50%;*/
-/*  border-style: solid;*/
-/*  border-color: #1c1a1a;*/
-
-/*}*/
-
-/*.title-align{*/
-/*  text-align: center;*/
-/*}*/
