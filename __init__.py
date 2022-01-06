@@ -10,6 +10,6 @@ def home(path):
 def sendEmail():
     data = request.get_json
     print("esto"+format(data))
-
+    return jsonify("Hello world")
 
 app.run()

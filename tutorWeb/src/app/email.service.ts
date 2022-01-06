@@ -10,10 +10,12 @@ export class EmailService {
 
   sendEmail(mail: string){
     //will autocatically send json data for mail
+
     this.http
-      .post('/api/mainPage', mail)
+      .post('api/mainPage', mail)
       .subscribe( mailData =>{
-        console.log(mailData)
+        console.log(mailData);
+        console.log("display");
     });
   }
 }

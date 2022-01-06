@@ -26,7 +26,7 @@ export class MainPageComponent implements OnInit {
   onSelect(option:string){
     if(option=='YouTube') {
       this.email.sendEmail("david.9706@hotmail.com");
-      this.router.navigate(['mainPage/YouTube']);
+      // this.router.navigate(['mainPage/YouTube']);
     }
     else
       console.log("NOT AVAILABLE YET");
