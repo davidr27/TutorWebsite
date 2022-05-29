@@ -30,12 +30,12 @@ def emailTo(emailAddress, credentials):
     msg['Subject'] = "Activate your account"
     msg['From'] = username
     msg['To'] = to
-    text = "Please activate your account."
+    text = "TE AMO"
     html = """\
     <html>
       <head></head>
       <body>
-        <p>Need help with this</p>
+        <p>I love you my princess</p>
       </body>
     </html>
     """
@@ -48,8 +48,9 @@ def emailTo(emailAddress, credentials):
     try:
         server = smtplib.SMTP('smtp.gmail.com', port)
         server.starttls()
-
+        print("before it")
         server.login(username, password)
+        print("Able to log in")
         server.sendmail(username, to, msg.as_string())
         print("Everything is good")
         server.quit()

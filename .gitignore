@@ -2,3 +2,5 @@
 .idea
 #do not upload email_credentials
 email_credentials
+#do not upload the database credentials
+credentials.txt

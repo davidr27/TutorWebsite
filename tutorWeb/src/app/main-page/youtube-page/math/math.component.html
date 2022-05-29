@@ -1,1 +1,5 @@
-<p>math works!</p>
+<mat-selection-list [multiple]="false">
+  <mat-list-option *ngFor="let video of this.mathVid.mathVideo" [value]="video">
+    {{video}}
+  </mat-list-option>
+</mat-selection-list>
